@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:background="#181317">
+    <LinearLayout
+        android:id="@+id/tv_Text"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-170dp"
+            android:layout_gravity="center"
+            android:text="12:00"
+            android:background="@drawable/circle_shape"
+            android:textColor="#fff"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="150dp"
+            android:text="Java复习"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/tv_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/button_shape"
+        android:layout_marginHorizontal="150dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="开始"
+            android:textSize="25sp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+</RelativeLayout>

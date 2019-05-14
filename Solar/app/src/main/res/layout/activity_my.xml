@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:background="#181317"
+    tools:context="MyActivity">
+
+    <LinearLayout
+        android:id="@+id/llUser"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:text="ZhangSan"
+            android:textSize="25sp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSet"
+        android:layout_below="@+id/llUser"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSet"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_press"
+            android:textColor="#fff"
+            android:text="设置"/>
+
+        <ImageView
+            android:layout_width="32sp"
+            android:layout_height="28sp"
+            android:src="@drawable/arrfill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChange"
+        android:layout_below="@id/llSet"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvChange"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/my_press"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="切换账户"/>
+
+        <ImageView
+            android:layout_width="28sp"
+            android:layout_height="28sp"
+            android:src="@drawable/arrfill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llScore"
+        android:layout_below="@id/llChange"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/my_press"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="积分详情"/>
+
+        <ImageView
+            android:layout_width="28sp"
+            android:layout_height="28sp"
+            android:src="@drawable/arrfill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRegister"
+        android:layout_below="@id/llScore"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/my_press"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="注册账号"/>
+
+        <ImageView
+            android:layout_width="28sp"
+            android:layout_height="28sp"
+            android:src="@drawable/arrfill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOut"
+        android:layout_below="@id/llRegister"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOut"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/my_press"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="退出登录"/>
+
+        <ImageView
+            android:layout_width="28sp"
+            android:layout_height="28sp"
+            android:src="@drawable/arrfill"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
