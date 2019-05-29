@@ -26,6 +26,10 @@ android {
 }
 
 dependencies {
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     //Chart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     implementation fileTree(dir: 'libs', include: ['*.jar'])

@@ -91,7 +91,7 @@
             android:id="@+id/queren"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/circle_shape2"
+            android:background="@drawable/circle_shape"
             android:text="确认"
             android:textColor="#000"
             />

@@ -15,6 +15,7 @@
         android:layout_marginLeft="45dp"/>
 
     <EditText
+        android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/register_circle_shape"
@@ -74,6 +75,7 @@
         android:layout_marginRight="60dp"
         android:layout_marginTop="5dp">
         <Button
+            android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/background"
@@ -81,6 +83,7 @@
             android:textColor="@color/colorWhite"
             android:textSize="13sp"/>
         <Button
+            android:id="@+id/btnForgetPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/background"

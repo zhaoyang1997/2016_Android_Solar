@@ -14,54 +14,60 @@
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:background="@color/background">
 
         <LinearLayout
             android:id="@+id/tab1"
-            style="@style/tab_rb_style"
-            android:background="#FFFFFF">
+            style="@style/tab_rb_style">
             <ImageView
                 android:id="@+id/image1"
                 android:layout_width="40dp"
-                android:layout_height="40dp"/>
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="首页"/>
+                android:text="首页"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"/>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/tab2"
-            style="@style/tab_rb_style"
-            android:background="#FFFFFF">
+            style="@style/tab_rb_style">
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"/>
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="任务"/>
+                android:text="任务"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"/>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/tab3"
-            style="@style/tab_rb_style"
-            android:background="#FFFFFF">
+            style="@style/tab_rb_style">
             <ImageView
                 android:id="@+id/image3"
                 android:layout_width="40dp"
-                android:layout_height="40dp"/>
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="数据"/>
+                android:text="数据"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"/>
         </LinearLayout>
     </LinearLayout>
 

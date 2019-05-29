@@ -65,9 +65,9 @@ public class MainActivity extends FragmentActivity {
         ft2=fragmentManager.beginTransaction();
 
         showFragment(firstFragment);
-//        imageView1.setImageResource(R.drawable.index22);
-//        imageView2.setImageResource(R.drawable.task11);
-//        imageView3.setImageResource(R.drawable.tingji11);
+        imageView1.setImageResource(R.drawable.fragment1_tab1_2);
+        imageView2.setImageResource(R.drawable.fragment2_tab2_1);
+        imageView3.setImageResource(R.drawable.fragment3_tab3_3);
     }
     /*
      * 获取tab
@@ -96,23 +96,23 @@ public class MainActivity extends FragmentActivity {
             switch (v.getId()){
                 case R.id.tab1:
                     showFragment(firstFragment);
-//                    imageView1.setImageResource(R.drawable.index22);
-//                    imageView2.setImageResource(R.drawable.task11);
-//                    imageView3.setImageResource(R.drawable.tingji11);
+                    imageView1.setImageResource(R.drawable.fragment1_tab1_2);
+                    imageView2.setImageResource(R.drawable.fragment2_tab2_1);
+                    imageView3.setImageResource(R.drawable.fragment3_tab3_3);
                     break;
                 case R.id.tab2:
                     showFragment(secondFragment);
-//                    imageView1.setImageResource(R.drawable.index11);
-//                    imageView2.setImageResource(R.drawable.task22);
-//                    imageView3.setImageResource(R.drawable.tingji11);
+                    imageView1.setImageResource(R.drawable.fragment1_tab1_1);
+                    imageView2.setImageResource(R.drawable.fragment2_tab2_2);
+                    imageView3.setImageResource(R.drawable.fragment3_tab3_3);
                     break;
                 case R.id.tab3:
 //                    ThirdFragment.Sum sum=new ThirdFragment.Sum();
 //                    sum.execute();
                     showFragment(thirdFragment);
-//                    imageView1.setImageResource(R.drawable.index11);;
-//                    imageView2.setImageResource(R.drawable.task11);
-//                    imageView3.setImageResource(R.drawable.tongji22);
+                    imageView1.setImageResource(R.drawable.fragment1_tab1_1);;
+                    imageView2.setImageResource(R.drawable.fragment2_tab2_1);
+                    imageView3.setImageResource(R.drawable.fragment3_tab3_4);
                     break;
             }
         }

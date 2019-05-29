@@ -1,4 +1,4 @@
-package com.example.lx.solormodel;
+package net.solar.server.solar;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +22,8 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
+
+import net.solar.server.solar.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +50,7 @@ public class StatisticsActivity extends AppCompatActivity {
 
     }
     private void setBarChart(){
-        barChart.setBackgroundColor(getResources().getColor(R.color.bg));
+        barChart.setBackgroundColor(getResources().getColor(R.color.background));
         barChart.setDrawGridBackground(false);
         barChart.setDrawBarShadow(false);
         barChart.setHighlightFullBarEnabled(false);

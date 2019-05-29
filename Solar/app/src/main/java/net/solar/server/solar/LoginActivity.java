@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 
+import net.solar.server.solar.entity.User;
+
 import java.io.IOException;
 
 import okhttp3.Call;
