@@ -1,4 +1,4 @@
-package com.example.lx.solormodel;
+package net.solar.server.solar;
 
 import android.location.Geocoder;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +17,8 @@ import com.baidu.mapapi.search.geocode.GeoCoder;
 import com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeOption;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
+
+import net.solar.server.solar.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

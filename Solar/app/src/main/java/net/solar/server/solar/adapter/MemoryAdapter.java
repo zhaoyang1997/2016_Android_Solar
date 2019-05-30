@@ -1,4 +1,4 @@
-package com.example.lx.solormodel;
+package net.solar.server.solar.adapter;
 
 import android.app.Activity;
 import android.renderscript.Element;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import net.solar.server.solar.R;
+import net.solar.server.solar.entity.Day;
 
 import java.util.ArrayList;
 import java.util.List;

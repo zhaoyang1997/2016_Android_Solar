@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="@color/background">
+        android:background="@color/colorBlack">
 
         <LinearLayout
             android:id="@+id/tab1"

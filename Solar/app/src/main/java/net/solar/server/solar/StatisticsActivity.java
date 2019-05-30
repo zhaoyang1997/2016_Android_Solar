@@ -50,7 +50,7 @@ public class StatisticsActivity extends AppCompatActivity {
 
     }
     private void setBarChart(){
-        barChart.setBackgroundColor(getResources().getColor(R.color.background));
+        barChart.setBackgroundColor(getResources().getColor(R.color.colorBlack));
         barChart.setDrawGridBackground(false);
         barChart.setDrawBarShadow(false);
         barChart.setHighlightFullBarEnabled(false);

@@ -36,7 +36,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/dingwei" />
+                android:src="@drawable/data_dingwei" />
             <TextView
                 android:id="@+id/tvDingwei"
                 android:layout_width="wrap_content"

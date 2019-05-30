@@ -1,4 +1,4 @@
-package com.example.lx.solormodel;
+package net.solar.server.solar;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import net.solar.server.solar.adapter.MemoryAdapter;
+import net.solar.server.solar.entity.Day;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +19,6 @@ public class MemoryActivity extends AppCompatActivity {
 
     private ListView listView;
     private List<Day> datas=new ArrayList<>();
-    private MemoryAdapter memoryAdapter;
     private TextView t20;
     private TextView t45;
     private TextView t60;
@@ -24,6 +26,7 @@ public class MemoryActivity extends AppCompatActivity {
     private TextView t120;
     private ImageView daka;
     private ImageView add;
+    private MemoryAdapter memoryAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +37,7 @@ public class MemoryActivity extends AppCompatActivity {
         datas.add(day1);
         Day day2=new Day("距离中考还有","25");
         datas.add(day2);
-        memoryAdapter=new MemoryAdapter(this,R.layout.list_item,datas);
+        memoryAdapter=new MemoryAdapter(this,R.layout.memory_list_item,datas);
         listView.setAdapter(memoryAdapter);
 
         t20.setOnClickListener(new View.OnClickListener() {
