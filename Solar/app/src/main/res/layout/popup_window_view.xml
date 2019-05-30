@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"/>
+
+        <Button
+            android:id="@+id/btnPickAlbum"
+            android:background="@drawable/button_shape"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从相册选择"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
