@@ -50,10 +50,24 @@
             android:layout_height="20dp"
             android:src="@drawable/down"/>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llRing"
+        android:layout_below="@+id/llSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/list"
-        android:layout_below="@+id/llSet"
+        android:layout_below="@+id/llRing"
         android:layout_marginHorizontal="40dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
