@@ -49,6 +49,8 @@
         <activity android:name=".SettingActivity" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".ChangePasswordActivity"></activity>
+        <activity android:name=".DakaActivity">
+        </activity>
     </application>
 
 </manifest>
