@@ -1,10 +1,9 @@
 package net.solar.server.solar;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -27,11 +26,15 @@ public class MemoryActivity extends AppCompatActivity {
     private ImageView daka;
     private ImageView add;
     private MemoryAdapter memoryAdapter;
+    private Intent tomatoIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory);
+
+        tomatoIntent = new Intent(getApplicationContext(),TomatoActivity.class);
+
         init();
         Day day1=new Day("距离高考还有","15");
         datas.add(day1);
@@ -43,32 +46,37 @@ public class MemoryActivity extends AppCompatActivity {
         t20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            tomatoIntent.putExtra("tomato",20);
+            startActivity(tomatoIntent);
             }
         });
 
         t45.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                tomatoIntent.putExtra("tomato",45);
+                startActivity(tomatoIntent);
             }
         });
         t60.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                tomatoIntent.putExtra("tomato",60);
+                startActivity(tomatoIntent);
             }
         });
         t90.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                tomatoIntent.putExtra("tomato",90);
+                startActivity(tomatoIntent);
             }
         });
         t120.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                tomatoIntent.putExtra("tomato",120);
+                startActivity(tomatoIntent);
             }
         });
         daka.setOnClickListener(new View.OnClickListener() {

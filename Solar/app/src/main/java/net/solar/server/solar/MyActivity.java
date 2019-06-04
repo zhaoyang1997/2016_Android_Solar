@@ -59,6 +59,8 @@ public class MyActivity extends AppCompatActivity {
     private String filename;
     private Bitmap resultImg;
     private String resultUserName;
+
+    //从登录页获取
     private int userId=1;
 
     private static int RESULT_LOAD_IMAGE = 1;
@@ -100,18 +102,26 @@ public class MyActivity extends AppCompatActivity {
             switch (v.getId()){
                 //跳转到设置页面
                 case R.id.tvSet:
+                    Intent setIntent = new Intent(getApplicationContext(),SettingActivity.class);
+                    startActivity(setIntent);
                     break;
                 //跳转到 切换账号
                 case R.id.tvChange:
+                    Intent changeIntent = new Intent(getApplicationContext(),LoginActivity.class);
+                    startActivity(changeIntent);
                     break;
                 //跳转到 注册页面
                 case R.id.tvRegister:
+                    Intent registeIntent = new Intent(getApplicationContext(),RegisterActivity.class);
+                    startActivity(registeIntent);
                     break;
                 //跳转到 积分详情
                 case R.id.tvScore:
                     break;
                 //退出登录
                 case R.id.tvOut:
+                    Intent outIntent = new Intent(getApplicationContext(),LoginActivity.class);
+                    startActivity(outIntent);
                     break;
                 case R.id.ivUserImg:// 点击更改头像
                     popupView = MyActivity.this.getLayoutInflater().inflate(R.layout.popup_window_view,null);
@@ -148,7 +158,7 @@ public class MyActivity extends AppCompatActivity {
                 file
         );
         Request request = new Request.Builder()
-                .url("http://10.7.89.78:8081/MyBatisDemo8/user/index")
+                .url("http://10.7.89.189:8080/SolarService/user/index")
                 .post(requestBody)
                 .build();
         Call call = okHttpClient.newCall(request);
@@ -282,7 +292,7 @@ public class MyActivity extends AppCompatActivity {
         String id = String.valueOf(uid);
         RequestBody requestBody = RequestBody.create(type,id);
         Request request = new Request.Builder()
-                .url("http://10.7.89.78:8081/MyBatisDemo8/user/find")
+                .url("http://10.7.89.189:8080/SolarService/user/find")
                 .post(requestBody)
                 .build();
         Call call = okHttpClient.newCall(request);
@@ -299,10 +309,9 @@ public class MyActivity extends AppCompatActivity {
                     Log.e("zn--test--response",message);
                     Gson gson = new Gson();
                     User user = gson.fromJson(message,User.class);
-                    String imgPath = "http://10.7.89.78:8081/MyBatisDemo8/images/"+user.getUserHead();
+                    String imgPath = "http://10.7.89.189:8080/SolarService/images/"+user.getUserHead();
                     resultImg = BitmapFactory.decodeStream(new URL(imgPath).openStream());
                     resultUserName = user.getUserName();
-
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
