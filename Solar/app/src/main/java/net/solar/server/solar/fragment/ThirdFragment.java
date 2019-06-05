@@ -1,11 +1,12 @@
 package net.solar.server.solar.fragment;
 
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,18 +27,34 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.PercentFormatter;
-import com.github.mikephil.charting.utils.ColorTemplate;
 
 import net.solar.server.solar.R;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class ThirdFragment extends Fragment {
     private BarChart barChart;
     private LineChart lineChart;
     private PieChart pieChart;
     private static int userId;
+    private OkHttpClient okHttpClient=new OkHttpClient();
+    List dayentries=new ArrayList();
+    List monthentries=new ArrayList();
+    List yearentries=new ArrayList();
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -47,11 +64,30 @@ public class ThirdFragment extends Fragment {
         barChart=view.findViewById(R.id.barchart);
         lineChart=view.findViewById(R.id.linechart);
         pieChart=view.findViewById(R.id.piechart);
-        setPieChart();
-        setBarChart();
-        setLineChart();
+        Sum sum=new Sum();
+       // sum.execute();
+
         return view;
     }
+
+    private static String getYear(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        String s = sdf.format(new Date());
+        return s;
+
+    }
+
+    private static String getMonth(){
+        SimpleDateFormat sdf = new SimpleDateFormat("MM");
+        String s = sdf.format(new Date());
+        return s;
+    }
+    private static String getDay(){
+        SimpleDateFormat sdf = new SimpleDateFormat("dd");
+        String s = sdf.format(new Date());
+        return s;
+    }
+
     private void setBarChart(){
         barChart.setBackgroundColor(getResources().getColor(R.color.colorBlack));
         barChart.setDrawGridBackground(false);
@@ -68,17 +104,9 @@ public class ThirdFragment extends Fragment {
         rightAxis.setEnabled(false);
         leftAxis.setAxisMinimum(0f);
         leftAxis.setTextColor(Color.WHITE);
-        ArrayList entries=new ArrayList();
-        entries.add(new BarEntry(1,2));
-        entries.add(new BarEntry(2,8));
-        entries.add(new BarEntry(3,5));
-        entries.add(new BarEntry(4,4));
-        entries.add(new BarEntry(5,8));
-        entries.add(new BarEntry(6,3));
-        entries.add(new BarEntry(7,7));
+        List entries=monthentries;
         BarDataSet barDataSet=new BarDataSet(entries,"");
-        barDataSet.setColors(new int[]{Color.rgb(127,255,0)
-        });
+        barDataSet.setColors(getResources().getColor(R.color.barc));
         barDataSet.setFormLineWidth(1f);
         barDataSet.setDrawValues(false);
         ArrayList dataSets=new ArrayList();
@@ -105,22 +133,11 @@ public class ThirdFragment extends Fragment {
         yAxis.setAxisMinimum(0f);
         yAxis.setDrawGridLines(false);
         yAxis.setTextColor(Color.WHITE);
-        List entries=new ArrayList();
-        entries.add(new Entry(1,15));
-        entries.add(new Entry(2,20));
-        entries.add(new Entry(3,25));
-        entries.add(new Entry(4,16));
-        entries.add(new Entry(5,20));
-        entries.add(new Entry(7,26));
-        entries.add(new Entry(8,21));
-        entries.add(new Entry(9,25));
-        entries.add(new Entry(10,20));
+        List entries = dayentries;
         LineDataSet dataSet=new LineDataSet(entries,"");
         dataSet.setMode(LineDataSet.Mode.CUBIC_BEZIER);
-        dataSet.setCubicIntensity(0.2f);
-        dataSet.setCircleColor(Color.rgb(154,192,205));
-        dataSet.setColor(Color.rgb(255,106,106));
-        dataSet.setFillColor(Color.rgb(255,255,0));
+        dataSet.setColor(getResources().getColor(R.color.linec));
+        dataSet.setFillColor(getResources().getColor(R.color.colorBlack));
         dataSet.setFillAlpha(200);
         dataSet.setDrawFilled(true);
         dataSet.setDrawValues(false);
@@ -145,13 +162,9 @@ public class ThirdFragment extends Fragment {
         dataSet.setSelectionShift(5f);
         //数据和颜色
         ArrayList<Integer> colors=new ArrayList<>();
-        for(int c: ColorTemplate.VORDIPLOM_COLORS)
-            colors.add(c);
-        for(int c:ColorTemplate.JOYFUL_COLORS)
-            colors.add(c);
-        for(int c:ColorTemplate.COLORFUL_COLORS)
-            colors.add(c);
-        colors.add(ColorTemplate.getHoloBlue());
+        colors.add(getResources().getColor(R.color.pie1));
+        colors.add(getResources().getColor(R.color.pie2));
+        colors.add(getResources().getColor(R.color.pie3));
         dataSet.setColors(colors);
         PieData data=new PieData(dataSet);
         data.setValueFormatter(new PercentFormatter());
@@ -165,5 +178,53 @@ public class ThirdFragment extends Fragment {
         pieChart.setEntryLabelTextSize(12f);
         Legend l=pieChart.getLegend();
         l.setEnabled(false);
+
     }
+
+    public class Sum extends AsyncTask {
+
+        @Override
+        protected Object doInBackground(Object[] objects) {
+            String result;
+            String path = "http://10.7.89.47:8080/SolorService/static";
+            FormBody.Builder bodyBuilder = new FormBody.Builder();
+            bodyBuilder.add("day", getDay());
+            bodyBuilder.add("month", getMonth());
+            bodyBuilder.add("year", getYear());
+            bodyBuilder.add("userId", "1");
+            FormBody body = bodyBuilder.build();
+            Request request = new Request.Builder().post(body)
+                    .url(path).build();
+            Call call = okHttpClient.newCall(request);
+            Response response = null;
+            try {
+                response = call.execute();
+                result = response.body().string();
+                Log.e("fyl",result);
+                JSONArray jsonArray=new JSONArray(result);
+                for(int i=0;i<7;i++){
+                    JSONObject jsonObject=jsonArray.getJSONObject(i);
+                    Integer data=jsonObject.getInt("w");
+                    dayentries.add(new Entry(i+1,data));
+                }
+                for(int i=7,j=0;i<jsonArray.length();i++,j++){
+                    JSONObject jsonObject=jsonArray.getJSONObject(i);
+                    int data=jsonObject.getInt("m");
+                    monthentries.add(new BarEntry(j+1,data));
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+        protected void onPostExecute(Object o){
+            setPieChart();
+            setBarChart();
+            setLineChart();
+        }
+    }
+
 }
