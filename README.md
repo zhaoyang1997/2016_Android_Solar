@@ -1,11 +1,14 @@
 <img src="../../../image/logo.png"/>
+
 # 2016级项目实训成果展示 
 
 ## 《Solar》 - Java与移动智能设备开发
 
 ### 项目简介
 
-    这是一款高效习惯养成的App，结合了科学的番茄工作法，有序的计划制定，任务管理等功能，将你的工作和生活中的待办任务与目标技能关联起来，让你做过的事务都成为积累技能成长的一部分。通过丰富的图表统计，简洁的事务提醒，为你直观展示你对时间的管理情况，打造一款全方位的实用性时间管理工具。
+    这是一款高效习惯养成的App，结合了科学的番茄工作法，有序的计划制定，任务管理等功能， 
+    将你的工作和生活中的待办任务与目标技能关联起来，让你做过的事务都成为积累技能成长的一部分。  通过丰富的图表统计，简洁的事务提醒，  为你直观展示你对时间的管理情况，打造一款全方位的实用性时间管理工具。
+    
 ### 项目地址
 - Github：[https://github.com/zhaoyang1997/2016_Android_Solar](https://github.com/zhaoyang1997/2016_Android_Solar)
 
@@ -38,7 +41,7 @@
 <img src="./image/打卡界面.png" width=250 height=400 />
 </p>
 <p>
-<img src="./image/设置日期倒计时.png" width=250 height=400 />
+<img src="./image/设置日期倒计时界面.png" width=250 height=400 />
 <img src="./image/番茄倒计时界面.png" width=250 height=400 />
 <img src="./image/任务清单界面.png" width=250 height=400 />
 </p>
@@ -59,6 +62,9 @@
 </p>
 <p>
 <img src="./image/忘记密码界面.png" width=250 height=400 />
-<img src="./image/心灵大师详情.png" width=250 height=400 />
-<img src="./image/宣泄情感.png" width=250 height=400 />
+<img src="./image/放弃番茄提示框.png" width=250 height=400 />
+<img src="./image/编辑任务.png" width=250 height=400 />
+</p>
+<p>
+<img src="./image/添加头像.png" width=250 height=400 />
 </p>
