@@ -25,7 +25,7 @@
   - Github：[https://github.com/liyabing](https://github.com/liyabing)
 - 黄亚鑫（产品经理、UI设计师、开发工程师、测试工程师）
   - Email：[562479963@qq.com](mailto:562479963@qq.com)
-  - Github：[https://github.com/ZhuoZm](https://github.com/ZhuoZm)
+  - Github：[https://github.com/huangyaxin1999](https://github.com/huangyaxin1999)
 - 贾欣蕊（质量专家、UI设计师、开发工程师、测试工程师）
   - Email：[1019785953@qq.com](mailto:1019785953@qq.com)
   - Github：[https://github.com/jiaxinrui](https://github.com/jiaxinrui)
@@ -33,51 +33,32 @@
 ### 项目截图
 
 <p>
-<img src="./image/logo-欢迎页.png" width=250 height=400 />
-<img src="./image/首页.jpg" width=250 height=400 />
-<img src="./image/ta的帖子.png" width=250 height=400 />
+<img src="./image/欢迎界面.png" width=250 height=400 />
+<img src="./image/首页.png" width=250 height=400 />
+<img src="./image/打卡界面.png" width=250 height=400 />
 </p>
 <p>
-<img src="./image/编辑发布帖子.png" width=250 height=400 />
-<img src="./image/短笑话.png" width=250 height=400 />
-<img src="./image/发现页-悬浮按钮.png" width=250 height=400 />
+<img src="./image/设置日期倒计时.png" width=250 height=400 />
+<img src="./image/番茄倒计时界面.png" width=250 height=400 />
+<img src="./image/任务清单界面.png" width=250 height=400 />
 </p>
 <p>
-<img src="./image/个人空间.png" width=250 height=400 />
-<img src="./image/话题动态.png" width=250 height=400 />
-<img src="./image/减压放松模块导图.png" width=250 height=400 />
+<img src="./image/添加任务.png" width=250 height=400 />
+<img src="./image/任务倒计时界面.png" width=250 height=400 />
+<img src="./image/数据统计界面.png" width=250 height=400 />
 </p>
 <p>
-<img src="./image/评论动态和点赞.png" width=250 height=400 />
-<img src="./image/热门话题.png" width=250 height=400 />
-<img src="./image/视频动态.png" width=250 height=400 />
+<img src="./image/个人信息界面.png" width=250 height=400 />
+<img src="./image/个人设置界面.png" width=250 height=400 />
+<img src="./image/积分排行榜.png" width=250 height=400 />
 </p>
 <p>
-<img src="./image/树洞中的信.png" width=250 height=400 />
-<img src="./image/树洞主页.png" width=250 height=400 />
-<img src="./image/通讯录.png" width=250 height=400 />
+<img src="./image/积分详情界面.png" width=250 height=400 />
+<img src="./image/登录界面.png" width=250 height=400 />
+<img src="./image/注册界面.png" width=250 height=400 />
 </p>
 <p>
-<img src="./image/心灵大师榜.png" width=250 height=400 />
+<img src="./image/忘记密码界面.png" width=250 height=400 />
 <img src="./image/心灵大师详情.png" width=250 height=400 />
 <img src="./image/宣泄情感.png" width=250 height=400 />
-</p>
-<p>
-<img src="./image/音乐库.png" width=250 height=400 />
-<img src="./image/账号管理.png" width=250 height=400 />
-<img src="./image/发文宣泄.jpg" width=250 height=400 />
-</p>
-<p>
-<img src="./image/每日励志.jpg" width=250 height=400 />
-<img src="./image/申请成为心灵大师.jpg" width=250 height=400 />
-<img src="./image/树洞读信.jpg" width=250 height=400 />
-</p>
-<p>
-<img src="./image/树洞回信.jpg" width=250 height=400 />
-<img src="./image/树洞取信.jpg" width=250 height=400 />
-<img src="./image/我的回信.jpg" width=250 height=400 />
-</p>
-<p>
-<img src="./image/个人资料.png" width=250 height=400 />
-<img src="./image/会话列表.png" width=250 height=400 />
 </p>
