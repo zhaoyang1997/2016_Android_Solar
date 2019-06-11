@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <!-- namespace:映射器接口权限名-->
+<mapper namespace="net.solar.server.dao.DakaMapper">
+
+	<insert id="insertDaka">
+		insert into daka(user_id,daka_date,daka_address) values(#{userId},#{date},#{address})
+	</insert>
+	<select id="selectDakaNum"  resultType="java.lang.Integer">
+		select count(*) from daka where user_id=#{id}
+	</select>
+	<select id="selectDakaCurrent" resultType="java.lang.Integer">
+		select IFNULL(count(*),0) from daka where user_id=#{userId} and daka_date=#{date}
+	</select>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:映射器接口的全名 -->
+<mapper namespace="net.solar.server.dao.TimeMapper">
+
+	<resultMap type="net.solar.server.entity.Time"  
+        id="timeMap">
+        <id property="id" column="id"/>
+    	<result property="userId" column="user_id"/>
+    	<result property="time" column="time"/>
+	</resultMap>
+	
+	<select id="selectTime" resultMap="timeMap">
+		select * from time t
+		where t.user_id=#{userId} and t.timedate=#{timedate}
+	</select>
+	
+	<insert id="insertTime">
+		insert into time(user_id,time,timedate)
+		values(#{userId},#{time},#{timedate})
+	</insert>
+	
+	<update id="updateTime">
+		update time t set t.time=#{time}
+		where  t.user_id=#{userId} and t.timedate=#{timedate}
+	</update>
+	
+
+</mapper>

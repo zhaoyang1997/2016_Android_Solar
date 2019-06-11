@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="net.solar.server.dao.UserMapper">
+
+	<resultMap type="net.solar.server.entity.User" 
+        id="userMap">
+        <id property="id" column="id"/>
+        <result property="email" column="email"/>
+    	<result property="userName" column="user_name"/>
+    	<result property="password" column = "password"/>
+    	<result property="verifyCode" column = "verify_code"/>
+    	<result property="userHead" column = "user_head"/>
+    	<association property="time">
+			<id column="id" property="id"/>
+			<result column="user_id" property="userId"/>
+			<result column="time" property="time"/>
+			<result column="timedate" property="timedate"/>
+		</association>
+	</resultMap>
+	
+	<update id="updateImg">
+		update user u set u.user_head=#{head} where u.id=#{id}
+	</update>
+	
+	<select id="findUserById" resultMap="userMap">
+		select * from user u where u.id=#{id}
+	</select>
+	<select id="selectUserByName" resultMap="userMap">
+		select * from user where user_name=#{userName}
+	</select>
+	<select id="selectUserByEmail" resultMap="userMap">
+		select * from user where email=#{email}
+	</select>
+	<insert id="insertUser" parameterType="net.solar.server.entity.User"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into user(email,user_name,password,user_head)
+		values(#{email},#{userName},#{password},#{userHead})
+	</insert>
+	<select id="findUserByEmail" resultMap="userMap">
+		select id,email,password 
+		from user 
+		where email=#{email}
+	</select>
+	
+	 <select id="selectMax" resultMap="userMap">
+		select t.time,u.user_name,u.user_head 
+		from user u
+		left join time t on u.id=t.user_id
+		where timedate=#{timeDate} order by time desc
+	</select>
+</mapper>

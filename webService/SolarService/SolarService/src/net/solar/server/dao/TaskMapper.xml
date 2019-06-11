@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.solar.server.dao.TaskMapper">
+	<resultMap type="net.solar.server.entity.Task" id="taskMap">
+		<id property="id" column="id" />
+		<result property="taskName" column="task_name" />
+		<result property="taskTime" column="task_time"/>
+		<result property="taskShow" column="task_show"/>
+		<result property="taskState" column="task_state"/>
+		<result property="taskYear" column="task_year"/>
+		<result property="taskMonth" column="task_month"/>
+		<result property="taskDay" column="task_day"/>
+	</resultMap>
+	<select id="findTaskNameByUserId" resultMap="taskMap">
+		select task_name,id,task_time from task
+		where user_id=#{id} and task_show=#{show} 
+	</select>
+	<update id="updateTaskById" >
+		update task
+		set task_name=#{name},task_time=#{time}
+		where id=#{tid} and user_id=#{uid}
+	</update>
+	<update id="updateTaskShowById" >
+		update task
+		set task_show=#{taskShow}
+		where id=#{id} and user_id=#{userId}
+	</update>
+
+	<insert id="insertTask">
+		insert into task(user_id,task_name,task_time,task_year,task_month,task_day,task_state,task_show) 
+		values(#{id},#{taskName},#{taskTime},#{taskYear},#{taskMonth},#{taskDay},#{taskState},#{taskShow})
+	</insert>
+
+	<update id="updateTaskStateById">
+		update task
+		set task_state=#{taskState}
+		where id=#{id} and user_id=#{userId}
+	</update>
+	
+	
+</mapper>

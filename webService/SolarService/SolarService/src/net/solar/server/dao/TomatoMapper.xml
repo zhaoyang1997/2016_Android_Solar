@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="net.solar.server.dao.TomatoMapper">
+
+	<resultMap type="net.solar.server.entity.Tomato"  
+        id="tomatoMap">
+        <id property="id" column="id"/>
+    	<result property="userId" column="user_id"/>
+    	<result property="tomatoCount" column="tomato_count"/>
+    	<result property="tomatoYear" column="tomato_year"/>
+    	<result property="tomatoMonth" column="tomato_month"/>
+    	<result property="tomatoDay" column="tomato_day"/>
+	</resultMap>
+	
+	<insert id="insertTomato">
+		insert into tomato(user_id,tomato_count,tomato_year,tomato_month,tomato_day)
+		values(#{userId},#{tomatoCount},#{tomatoYear},#{tomatoMonth},#{tomatoDay})
+	</insert>
+	<select id="getStaticWeekAndMonth" resultType="java.lang.Integer">
+		select IFNULL(tomato_count,0) 
+		from tomato 
+		where tomato_year=#{year} and tomato_month=#{month} and tomato_day=#{day} and user_id=#{userId}
+	</select>
+	<select id="getStaticYear" resultType="java.lang.Integer">
+		select IFNULL(sum(tomato_count),0) 
+		from tomato 
+		where tomato_year=#{year} and tomato_month=#{month} and user_id=#{userId}
+	</select>
+	<select id="getStaticWeekAndMonthTask" resultType="java.lang.Integer">
+		select IFNULL(count(*),0) from task where task_year=#{year} and task_month=#{month} and task_day=#{day} and user_id=#{userId} and task_state=1
+		
+	</select>
+	
+	<select id="getStaticYearTask" resultType="java.lang.Integer">
+		select IFNULL(count(*),0) from task where task_year=#{year} and task_month=#{month} and user_id=#{userId} and task_state=1
+	</select>
+	
+	<select id="getStaticYearTaskNOT" resultType="java.lang.Integer">
+		select IFNULL(count(*),0) from task where task_year=#{year} and task_month=#{month} and user_id=#{userId} and task_state=0
+	</select>
+	<select id="selectAllTomatoByUserId" resultMap="tomatoMap">
+		select * from tomato where user_id=#{userId}
+	</select>
+	
+</mapper>

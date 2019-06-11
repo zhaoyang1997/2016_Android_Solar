@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.solar.server.dao.RingMapper">
+	<!-- 结果映射 -->
+    <resultMap type="net.solar.server.entity.Ring" id="ringMap">
+        <id column="id" property="id"></id>
+        <result column="ring_name" property="ringName"/>
+        <result column="ring_file" property="ringFile"/>
+    </resultMap>
+    <!-- 映射select语句 -->
+    <select id="findRings" resultMap="ringMap">
+    	select * from ring
+    </select>
+</mapper>
