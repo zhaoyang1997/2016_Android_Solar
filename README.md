@@ -1,39 +1,34 @@
 <img src="../../../image/logo.png"/>
-# 2015级项目实训成果展示 
+# 2016级项目实训成果展示 
 
-## 《解忧杂货店》 - Java与移动智能设备开发
+## 《Solar》 - Java与移动智能设备开发
 
 ### 项目简介
 
-一款“情感类问答型App”——专治不开心，度你到彼岸！
-
-人的一生，在工作学习生活中会面临各式各样的烦恼，忧虑，纠结还有各种各样的问题。然而有很多问题，我们有时候我们说不出口，有时候我们得不到答案，太多时候我们没办法感同身受，没有办法理解他人的烦恼。之前那个博主曾经写到“我踏上的每条路的名字都叫做迷路”，越弱小越坚强，同样的，越难过也越渴望阳光。而我们解忧杂货店想做的，正是给群迷路的人一些温暖，一些开导，一些鼓励。
-
-一块“心灵小憩的净土”，一处“思绪放飞的港湾”，一个“烦恼消失的地方”。
-
+    这是一款高效习惯养成的App，结合了科学的番茄工作法，有序的计划制定，任务管理等功能，将你的工作和生活中的待办任务与目标技能关联起来，让你做过的事务都成为积累技能成长的一部分。通过丰富的图表统计，简洁的事务提醒，为你直观展示你对时间的管理情况，打造一款全方位的实用性时间管理工具。
 ### 项目地址
-- Github：[https://github.com/nieliangpeng/Worry-Grocery-Shop-APP](https://github.com/nieliangpeng/Worry-Grocery-Shop-APP)
+- Github：[https://github.com/zhaoyang1997/2016_Android_Solar](https://github.com/zhaoyang1997/2016_Android_Solar)
 
 ### 项目成员
 
-- 豆刚（项目经理、UI设计师、开发工程师、测试工程师）
-  - Email：[dougang1026@foxmail.com](mailto:dougang1026@foxmail.com) 
-  - Github：[https://github.com/dougang1026](https://github.com/dougang1026)
-- 闫家成（市场总监、UI设计师、开发工程师、测试工程师）
-  - Email：[673105182@qq.com](mailto:673105182@qq.com)
-  - Github：[https://github.com/jiachengyan](https://github.com/jiachengyan)
-- 聂良鹏（技术总监、UI设计师、开发工程师、测试工程师）
-  - Email：[1551073921@qq.com](mailto:1551073921@qq.com)
-  - Github：[https://github.com/nieliangpeng](https://github.com/nieliangpeng)
-- 王明（技术总监、UI设计师、开发工程师、测试工程师）
-  - Email：[2908673445@qq.com](mailto:2908673445@qq.com)
-  - Github：[https://github.com/WangMing6ban](https://github.com/WangMing6ban)
-- 卓增媚（产品经理、UI设计师、开发工程师、测试工程师）
-  - Email：[2396515252@qq.com](mailto:2396515252@qq.com)
+- 赵洋（项目经理、UI设计师、开发工程师、测试工程师）
+  - Email：[1113685250@qq.com](mailto:1113685250@qq.com) 
+  - Github：[https://github.com/zhaoyang1997](https://github.com/zhaoyang1997)
+- 范艺琳（技术总监、UI设计师、开发工程师、测试工程师）
+  - Email：[fyl90201314521@qq.com](mailto:fyl90201314521@qq.com)
+  - Github：[https://github.com/fanyilin0128](https://github.com/fanyilin0128)
+- 郑宁宁（技术总监、UI设计师、开发工程师、测试工程师）
+  - Email：[1083245034@qq.com](1083245034@qq.com)
+  - Github：[https://github.com/zhengnning](https://github.com/zhengnning)
+- 李亚冰（技术总监、UI设计师、开发工程师、测试工程师）
+  - Email：[3111512700@qq.com](mailto:3111512700@qq.com)
+  - Github：[https://github.com/liyabing](https://github.com/liyabing)
+- 黄亚鑫（产品经理、UI设计师、开发工程师、测试工程师）
+  - Email：[562479963@qq.com](mailto:562479963@qq.com)
   - Github：[https://github.com/ZhuoZm](https://github.com/ZhuoZm)
-- 杨晓宇（质量专家、UI设计师、开发工程师、测试工程师）
-  - Email：[14703313561@163.com](mailto:14703313561@163.com)
-  - Github：[https://github.com/yangxiaoyu98](https://github.com/yangxiaoyu98)
+- 贾欣蕊（质量专家、UI设计师、开发工程师、测试工程师）
+  - Email：[1019785953@qq.com](mailto:1019785953@qq.com)
+  - Github：[https://github.com/jiaxinrui](https://github.com/jiaxinrui)
 
 ### 项目截图
 
