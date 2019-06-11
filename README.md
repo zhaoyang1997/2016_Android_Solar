@@ -12,13 +12,13 @@
 ### 项目成员
 
 - 赵洋（项目经理、UI设计师、开发工程师、测试工程师）
-  - Email：[1113685250@qq.com](mailto:1113685250@qq.com) 
+  - Email：[m15226510335@163.com](mailto:m15226510335@163.com) 
   - Github：[https://github.com/zhaoyang1997](https://github.com/zhaoyang1997)
 - 范艺琳（技术总监、UI设计师、开发工程师、测试工程师）
-  - Email：[fyl90201314521@qq.com](mailto:fyl90201314521@qq.com)
+  - Email：[443281340@qq.com](mailto:443281340@qq.com)
   - Github：[https://github.com/fanyilin0128](https://github.com/fanyilin0128)
 - 郑宁宁（技术总监、UI设计师、开发工程师、测试工程师）
-  - Email：[1083245034@qq.com](1083245034@qq.com)
+  - Email：[zhengnning@163.com](mailto:zhengnning@163.com)
   - Github：[https://github.com/zhengnning](https://github.com/zhengnning)
 - 李亚冰（技术总监、UI设计师、开发工程师、测试工程师）
   - Email：[3111512700@qq.com](mailto:3111512700@qq.com)
