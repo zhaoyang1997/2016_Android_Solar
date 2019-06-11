@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Solar</string>
+    <string name="client_url">http://10.7.89.47:8080/SolarService</string>
+</resources>

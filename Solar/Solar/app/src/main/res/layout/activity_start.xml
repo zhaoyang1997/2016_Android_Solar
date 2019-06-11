@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="1000">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+            </ImageView>
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="简 约 清 晰 的 任 务 管 理"/>
+            <TextView
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每 天 锻 炼 30 分 钟"/>
+            <TextView
+                android:layout_marginTop="170dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每 周 复 习 10 次"/>
+            <TextView
+                android:layout_marginTop="190dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简 单 高 效 管 理 你 的 习 惯 和 目 标"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY">
+            </ImageView>
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="详 尽 完 善 的 数 据 统 计"/>
+            <TextView
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专 注 时 长 分 布"/>
+            <TextView
+                android:layout_marginTop="170dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高 效 时 间 区 间、打 断 原 因、宏 观 分 析"/>
+            <TextView
+                android:layout_marginTop="190dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更 添 成 就 感"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/a3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY">
+            </ImageView>
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="待 办 集 - 高 效 管 理 事 项"/>
+            <TextView
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="井 井 有 条，落 落 大 方"/>
+            <TextView
+                android:layout_marginTop="170dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还 可 按 待 办 集 分 类 查 看 统 计 数 据"/>
+            <Button
+                android:id="@+id/btn_start_now"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="480dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_ty"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/white"
+                android:text="立 即 体 验"/>
+        </RelativeLayout>
+    </ViewFlipper>
+    <FrameLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <!-- <ImageView
+            android:id="@+id/dot"
+            android:src="@drawable/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+    </FrameLayout>
+</RelativeLayout>
