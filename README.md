@@ -25,7 +25,7 @@
   - Github：[https://github.com/liyabing](https://github.com/liyabing)
 - 黄亚鑫（产品经理、UI设计师、开发工程师、测试工程师）
   - Email：[562479963@qq.com](mailto:562479963@qq.com)
-  - Github：[https://github.com/ZhuoZm](https://github.com/ZhuoZm)
+  - Github：[https://github.com/huangyaxin1999](https://github.com/huangyaxin1999)
 - 贾欣蕊（质量专家、UI设计师、开发工程师、测试工程师）
   - Email：[1019785953@qq.com](mailto:1019785953@qq.com)
   - Github：[https://github.com/jiaxinrui](https://github.com/jiaxinrui)
@@ -33,9 +33,9 @@
 ### 项目截图
 
 <p>
-<img src="./image/logo-欢迎页.png" width=250 height=400 />
-<img src="./image/首页.jpg" width=250 height=400 />
-<img src="./image/ta的帖子.png" width=250 height=400 />
+<img src="./image/欢迎界面.png" width=250 height=400 />
+<img src="./image/首页.png" width=250 height=400 />
+<img src="./image/打卡界面.png" width=250 height=400 />
 </p>
 <p>
 <img src="./image/编辑发布帖子.png" width=250 height=400 />
